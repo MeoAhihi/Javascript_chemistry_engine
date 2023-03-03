@@ -48,6 +48,19 @@ function reaction() {
         environment[component[1]] -= unit * component[0];
       }
     });
-    return environment;
+    this.clean(environment)
+    return (environment);
   };
+
+  this.clean = function (array) {
+    for (const key in array) {
+      if (Object.hasOwnProperty.call(array, key) && array[key] == 0) {
+        delete array[key];
+      }
+    }
+  }
+
+}
+reaction.prototype.toString = function () {
+  return `aaaa`
 }
