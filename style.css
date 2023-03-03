@@ -1,0 +1,16 @@
+*{
+    margin: 1em;
+    padding: 1em;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: large;
+}
+
+body {
+    background-color: #282a2e;
+    color: #c5c8c6;
+}
+
+input {
+    height: 0.25rem;
+    width: 5rem;
+}
